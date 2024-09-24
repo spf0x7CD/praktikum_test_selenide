@@ -89,7 +89,7 @@ public class OrderPageScooter {
     public OrderPageScooter selectRentPeriod(RentalDays days) {
         rentPeriodField.click();
         $$x(".//div[@class='Dropdown-menu']/div")
-                .get(days.getIndex())
+                .get(days.ordinal())
                 .click();
         return page(this);
     }
